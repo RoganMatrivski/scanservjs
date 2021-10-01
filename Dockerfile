@@ -1,5 +1,5 @@
 # Builder image. Alpine doesn't have python which is required by node-sass
-FROM node:14-buster AS builder
+FROM arm32v7/node:14-buster AS builder
 ENV APP_DIR=/app
 WORKDIR "$APP_DIR"
 
